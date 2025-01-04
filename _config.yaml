@@ -13,25 +13,25 @@ name: Introduction
 description: "Background on League of Legends and the research question driving this analysis."
 
 name: Data Source and Preparation
-description: "Detailed steps on data cleaning, integration, and feature engineering."
+description: "Detailed steps on data cleaning, integration, and feature engineering, including the use of Kaggle datasets."
 
 name: Analysis Documentation
-description: "A comprehensive walkthrough of exploratory data analysis, statistical methods, and top champion insights."
+description: "A comprehensive walkthrough of exploratory data analysis, statistical methods, and insights on champion preferences."
 
 name: Visualizations and Dashboards
-description: "Interactive visuals showcasing champion preferences and relationships among metrics."
+description: "Detailed visuals illustrating champion preferences, trends, and metric relationships."
 
 name: Discussion and Recommendations
-description: "Key findings, implications for game developers, and recommendations for future research."
+description: "Key findings, implications for game developers, and suggestions for further study."
 
 name: Conclusion
 description: "Final thoughts on the study and its relevance to understanding player behaviour."
 
 name: Acknowledgements
-description: "Credits for data sources and tools used in the project."
+description: "Credits for Kaggle as the data source and tools such as Pandas, Seaborn, and Matplotlib."
 
 name: Future Work
-description: "Ideas for extending this analysis to other games or player behaviour trends."
+description: "Exploration of similar studies on games like Cyberpunk 2077 and Assassin's Creed Valhalla."
 social_links:
 
 platform: GitHub

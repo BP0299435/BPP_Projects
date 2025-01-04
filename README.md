@@ -1,85 +1,216 @@
-# League of Legends Champion Preference Analysis
+League of Legends Champion Data Analysis
 
-## Executive Summary
+This README documents the steps taken and insights derived from the analysis of League of Legends champion data. As an avid gamer and long-time follower of League of Legends—a game I have passionately played and followed, including its world championships—this project was inspired by my interest in understanding player preferences for champions. The analysis aims to investigate which champions are most and least favoured by players and why this might be.
 
-This project explores the relationship between player preferences and champion attributes in the popular game League of Legends. By analyzing key metrics such as win rate, damage dealt, and popularity, the study aims to uncover trends that influence player decisions. Challenges such as integrating and cleaning multiple datasets were overcome to produce actionable insights. The analysis highlights champions preferred due to balanced attributes and others avoided due to high complexity, offering recommendations for developers and players alike.
+This project uses publicly available data on champion statistics and player preferences, offering insights into what makes a champion appealing or avoided. While new champions frequently emerge following major events, some iconic champions consistently capture players' attention.
 
-## Introduction
+In the future, I would like to extend this analysis to include data from my favourite games, Cyberpunk 2077 and Assassin's Creed Valhalla, to explore how player preferences evolve across genres and mechanics.
 
-League of Legends is a globally renowned multiplayer online battle arena game with a rich roster of champions. As an avid gamer and fan of the League of Legends World Championship, this project combines personal interest with data science techniques to analyze champion preferences. By exploring quantitative metrics, the project seeks to identify patterns in champion selection, aiming to answer: What attributes make champions preferred or avoided?
+1. Data Cleaning
 
-## Data Source and Preparation
+Description:
 
-The analysis relies on two datasets:
-1. `export_lol_champs.csv`: Contains champion stats (e.g., health, damage, movement speed).
-2. `lol_champions.csv`: Provides additional attributes like win rate, popularity, and ban rate.
+Data cleaning is an essential step to ensure the dataset is ready for analysis. Redundant columns were removed, numerical conversions were handled, and missing values were addressed. This step laid the foundation for reliable and meaningful insights.
 
-### Key Steps:
-- **Cleaning**: Removed duplicates and irrelevant columns.
-- **Merging**: Integrated datasets using the champion name as a key.
-- **Feature Engineering**: Created a composite score to quantify champion preference, combining win rate and popularity.
+Key Steps:
 
-## Analysis Documentation
+Dropped redundant columns like Unnamed: 0 to declutter the dataset.
 
-### Exploratory Data Analysis
-Initial exploration revealed:
-- A wide range of win rates (42.6% to 53.2%) and damage dealt metrics.
-- Popularity varied significantly, highlighting disparities in player preferences.
+Converted non-numeric columns (e.g., AS+) to numeric, handling errors gracefully with coercion.
 
-### Correlation Analysis
-A heatmap visualized relationships between metrics, identifying significant positive correlations between damage dealt and composite score.
+Filled missing values in the Style column with "Unknown," ensuring categorical completeness.
 
-### Classification
-Champions were classified into `Preferred`, `Neutral`, and `Avoided` based on composite scores:
-- **Preferred**: Champions with balanced attributes and higher win rates.
-- **Avoided**: High skill-cap champions, despite dealing significant damage.
-- **Neutral**: Average-performing champions.
+Cleaned columns like Winrate, Gold, and DamageDealt to ensure consistent numeric formats.
 
-## Visualizations and Dashboards
-- **Scatter Plots**: Showcased the relationship between composite score and win rate.
-- **Bar Charts**: Highlighted top `Preferred` and `Avoided` champions with associated metrics.
-- **Distribution Graphs**: Displayed the spread of composite scores and damage dealt.
+Why it Matters:
 
-Snapshots of visualizations are stored in the `/snapshots` folder for easy reference.
+As a gamer, I understand how critical it is for stats to be accurate and clean, ensuring analysis reflects true gameplay metrics and trends.
 
-## Discussion and Recommendations
-### Findings
-1. Preferred champions had win rates above 50%, while avoided champions, though dealing more damage, had lower popularity.
-2. High skill-cap champions require advanced mechanics, deterring average players.
+Outputs:
 
-### Recommendations
-1. Developers should consider tutorials or balancing updates for high skill-cap champions.
-2. Future iterations could analyze new champions post-major updates to observe evolving trends.
 
-## Acknowledgements
-Data was sourced from online repositories such as Kaggle, and the analysis leveraged Python libraries (pandas, matplotlib, seaborn) and Google Colab.
 
-## Future Work
-In future projects, data from games like Cyberpunk 2077 or Assassin's Creed Valhalla could be analyzed to broaden insights into player behavior across genres.
 
-## Screenshots
-Snapshots of the analysis and outputs can be found in the `/snapshots` folder:
-- `distribution_chart.png`
-- `scatterplot.png`
-- `top_preferred.png`
-- `top_avoided.png`
 
-## Project Structure
-```
-|-- code/
-|   |-- data_cleaning.py
-|   |-- analysis.py
-|-- snapshots/
-|   |-- distribution_chart.png
-|   |-- scatterplot.png
-|   |-- top_preferred.png
-|   |-- top_avoided.png
-|-- README.md
-|-- data/
-|   |-- export_lol_champs.csv
-|   |-- lol_champions.csv
-```
 
-## Links
-- [Google Colab Notebook](https://colab.research.google.com/)
-- [GitHub Repository](https://github.com/IwannaChatz/BPP_Projects)
+
+2. Data Loading and Initial Exploration
+
+Description:
+
+Explored datasets to understand their structure and contents, identifying key columns for analysis. This step provided the first look at the data and informed subsequent steps.
+
+Key Steps:
+
+Loaded two datasets: lol_champs.csv and export_lol_champs.csv.
+
+Previewed the first five rows of each dataset to understand their structure.
+
+Assessed column data types and identified missing values to plan cleaning efforts.
+
+Why it Matters:
+
+Exploring data mirrors the early stages of strategizing in a game—knowing your resources is key to crafting a winning plan.
+
+Outputs:
+
+
+
+3. Merging Datasets
+
+Description:
+
+The datasets were merged on the Champions column to create a comprehensive dataset for analysis.
+
+Key Steps:
+
+Used an inner join on the Champions column to combine relevant data.
+
+Removed duplicate columns like HP_y, HP5_y, etc., to avoid redundancy.
+
+Why it Matters:
+
+Just like assembling a winning team in League of Legends, merging datasets creates a cohesive whole, combining strengths for better insights.
+
+Outputs:
+
+
+
+4. Classification of Preferences
+
+Description:
+
+Champions were categorized into "Preferred," "Neutral," and "Avoided" based on thresholds applied to their composite scores. This classification helps highlight patterns in player preferences.
+
+Key Steps:
+
+Calculated thresholds for "Preferred" and "Avoided" categories based on composite score distribution.
+
+Assigned champions to categories accordingly.
+
+Why it Matters:
+
+Categorizing champions mirrors the decision-making process in gameplay, helping identify meta champions and understanding playstyle trends.
+
+Outputs:
+
+
+
+5. Data Visualization
+
+Description:
+
+Visualized key metrics to uncover patterns and relationships within the data.
+
+Key Steps:
+
+Created a histogram of composite scores, marking preferred and avoided thresholds.
+
+Generated a count plot to illustrate the distribution of preference categories.
+
+Constructed a heatmap to analyze correlations between metrics like Winrate and DamageDealt.
+
+Why it Matters:
+
+As a visual learner and gamer, I know the value of visualizing trends to strategize effectively, whether in-game or through data.
+
+Outputs:
+
+
+
+
+
+
+
+6. Normalization of Metrics
+
+Description:
+
+Normalized metrics such as Winrate, Popularity, and KDA for better comparability and to reduce the impact of scale differences.
+
+Key Steps:
+
+Applied min-max normalization to scale values between 0 and 1.
+
+Normalized KDA by considering kills, deaths, and assists proportionately.
+
+Why it Matters:
+
+In gaming, fair comparisons are essential—whether comparing champions or player performance, normalization ensures balance.
+
+Outputs:
+
+
+
+7. Group Analysis by Preference
+
+Description:
+
+Grouped champions by preference to calculate average metrics and compare categories. This step quantified differences between "Preferred," "Neutral," and "Avoided" groups.
+
+Key Steps:
+
+Computed mean values for metrics like Winrate and DamageDealt across preference groups.
+
+Identified standout characteristics of each group.
+
+Why it Matters:
+
+Understanding group characteristics aids in identifying why certain champions dominate or fall behind in the meta.
+
+Outputs:
+
+
+
+8. Insights and Top Champions
+
+Description:
+
+Highlighted the top 5 preferred and avoided champions based on composite scores. Each category was analyzed for standout metrics.
+
+Key Steps:
+
+Extracted the top 5 champions in the "Preferred" category.
+
+Identified the bottom 5 champions in the "Avoided" category.
+
+Compared metrics like Popularity and Winrate to explain rankings.
+
+Why it Matters:
+
+As a player, understanding the top and bottom champions provides insight into the meta and how to counter or leverage them effectively.
+
+Outputs:
+
+
+
+
+
+9. Subplot Visualizations for Key Metrics
+
+Description:
+
+Created subplot visualizations for metrics like Winrate, DamageDealt, and Popularity for the top preferred and avoided champions.
+
+Key Steps:
+
+Designed comparative bar charts for multiple metrics in a single figure.
+
+Analyzed patterns to understand what makes a champion "Preferred" or "Avoided."
+
+Why it Matters:
+
+As a gamer, seeing stats side-by-side helps me understand what truly defines a champion's appeal or shortcomings.
+
+Outputs:
+
+
+
+
+
+Summary:
+
+This analysis provided actionable insights into champion performance and preferences. Through data cleaning, visualization, and detailed analysis, the project highlighted key trends and informed strategies for champion selection, gameplay balance, and future design decisions.
+
+Gaming isn’t just a hobby for me—it’s a passion. This project blends my analytical skills with my love for League of Legends to demonstrate how data can uncover hidden patterns and improve both gameplay and design. Feel free to explore the code and outputs for a detailed understanding of each step!
+

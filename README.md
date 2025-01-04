@@ -1,7 +1,7 @@
 League of Legends Champion Analysis
 1. Link to GitHub Portfolio
 A full version of this project, including code notebooks and additional commentary, is hosted on my GitHub:
-League of Legends Data Analysis
+[League of Legends Data Analysis](https://github.com/IwannaChatz/BPP_Projects)
 
 2. Research Question / Business Problem
 Research Question: Which League of Legends champions demonstrate consistently high performance (based on win rate, popularity, and KDA metrics), and which champions underperform or exhibit low pick rates, thereby indicating a need for game-balancing tweaks?

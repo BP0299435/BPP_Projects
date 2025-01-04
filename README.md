@@ -1,8 +1,8 @@
-League of Legends Champion Data Analysis
+League of Legends Champion Preference Analysis
 
 This README documents the steps taken and insights derived from the analysis of League of Legends champion data. As an avid gamer and long-time follower of League of Legends—a game I have passionately played and followed, including its world championships—this project was inspired by my interest in understanding player preferences for champions. The analysis aims to investigate which champions are most and least favoured by players and why this might be.
 
-This project uses publicly available data on champion statistics and player preferences, offering insights into what makes a champion appealing or avoided. While new champions frequently emerge following major events, some iconic champions consistently capture players' attention.
+This project uses publicly available data sourced from Kaggle, focusing on champion statistics and player preferences. It offers insights into what makes a champion appealing or avoided. While new champions frequently emerge following major events, some iconic champions consistently capture players' attention.
 
 In the future, I would like to extend this analysis to include data from my favourite games, Cyberpunk 2077 and Assassin's Creed Valhalla, to explore how player preferences evolve across genres and mechanics.
 
@@ -24,13 +24,9 @@ Cleaned columns like Winrate, Gold, and DamageDealt to ensure consistent numeric
 
 Why it Matters:
 
-As a gamer, I understand how critical it is for stats to be accurate and clean, ensuring analysis reflects true gameplay metrics and trends.
+Accurate and clean data ensures analysis reflects true gameplay metrics and trends.
 
 Outputs:
-
-
-
-
 
 
 
@@ -42,7 +38,7 @@ Explored datasets to understand their structure and contents, identifying key co
 
 Key Steps:
 
-Loaded two datasets: lol_champs.csv and export_lol_champs.csv.
+Loaded two datasets: lol_champs.csv and export_lol_champs.csv sourced from Kaggle.
 
 Previewed the first five rows of each dataset to understand their structure.
 
@@ -119,9 +115,6 @@ Outputs:
 
 
 
-
-
-
 6. Normalization of Metrics
 
 Description:
@@ -178,11 +171,9 @@ Compared metrics like Popularity and Winrate to explain rankings.
 
 Why it Matters:
 
-As a player, understanding the top and bottom champions provides insight into the meta and how to counter or leverage them effectively.
+Understanding the top and bottom champions provides insight into the meta and how to counter or leverage them effectively.
 
 Outputs:
-
-
 
 
 
@@ -200,17 +191,26 @@ Analyzed patterns to understand what makes a champion "Preferred" or "Avoided."
 
 Why it Matters:
 
-As a gamer, seeing stats side-by-side helps me understand what truly defines a champion's appeal or shortcomings.
+As a gamer, seeing stats side-by-side helps make informed decisions, both in gameplay and analysis.
 
 Outputs:
 
 
 
-
+Conclusion
 
 Summary:
 
-This analysis provided actionable insights into champion performance and preferences. Through data cleaning, visualization, and detailed analysis, the project highlighted key trends and informed strategies for champion selection, gameplay balance, and future design decisions.
+Preferred champions are often those with a balance of higher win rates and consistent popularity metrics.
 
-Gaming isn’t just a hobby for me—it’s a passion. This project blends my analytical skills with my love for League of Legends to demonstrate how data can uncover hidden patterns and improve both gameplay and design. Feel free to explore the code and outputs for a detailed understanding of each step!
+Avoided champions, while statistically dealing more damage, often have complex mechanics (high skill cap), which might deter players.
 
+Neutral champions provide a middle ground, neither excelling nor underperforming significantly.
+
+Recommendations:
+
+Highlight skill cap as a critical factor influencing champion preference. Complex champions might benefit from tutorials or simplified mechanics for newer players.
+
+For game developers: consider balancing champions with lower popularity and preference scores by adjusting difficulty or usability.
+
+Further study player behaviour to explore the impact of a high-performance Avoided champion due to skill gaps.

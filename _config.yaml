@@ -5,44 +5,31 @@ show_downloads: true
 favicon: /path/to/favicon.ico
 theme: jekyll-theme-minimal
 sections:
-
-name: Executive Summary
-description: "A concise overview of the project's challenge, methodology, and key findings."
-
-name: Introduction
-description: "Background on League of Legends and the research question driving this analysis."
-
-name: Data Source and Preparation
-description: "Detailed steps on data cleaning, integration, and feature engineering, including the use of Kaggle datasets."
-
-name: Analysis Documentation
-description: "A comprehensive walkthrough of exploratory data analysis, statistical methods, and insights on champion preferences."
-
-name: Visualizations and Dashboards
-description: "Detailed visuals illustrating champion preferences, trends, and metric relationships."
-
-name: Discussion and Recommendations
-description: "Key findings, implications for game developers, and suggestions for further study."
-
-name: Conclusion
-description: "Final thoughts on the study and its relevance to understanding player behaviour."
-
-name: Acknowledgements
-description: "Credits for Kaggle as the data source and tools such as Pandas, Seaborn, and Matplotlib."
-
-name: Future Work
-description: "Exploration of similar studies on games like Cyberpunk 2077 and Assassin's Creed Valhalla."
+  - name: Executive Summary
+    description: "A concise overview of the project's challenge, methodology, and key findings."
+  - name: Introduction
+    description: "Background on League of Legends and the research question driving this analysis."
+  - name: Data Source and Preparation
+    description: "Detailed steps on data cleaning, integration, and feature engineering."
+  - name: Analysis and Findings
+    description: "A comprehensive walkthrough of exploratory data analysis, statistical methods, and top champion insights."
+  - name: Visualization Highlights
+    description: "Visual representation of trends, preferences, and correlations."
+  - name: Discussion and Recommendations
+    description: "Insights for game designers and developers based on key findings."
+  - name: Future Work
+    description: "Ideas for extending this analysis to other games or player behavior trends."
+  - name: Acknowledgments
+    description: "Credits for data sources and tools used in the project."
+  - name: Contact
+    description: "Links to GitHub and Colab Notebook for further exploration."
 social_links:
-
-platform: GitHub
-url: https://github.com/IwannaChatz/BPP_Projects
-
-platform: Colab Notebook
-url: https://colab.research.google.com/
+  - platform: GitHub
+    url: https://github.com/IwannaChatz/BPP_Projects
+  - platform: Colab Notebook
+    url: https://colab.research.google.com/
 output:
-
-file_type: PDF
-description: "Download the full report."
-
-file_type: Markdown
-description: "View the README file."
+  - file_type: PDF
+    description: "Download the full report."
+  - file_type: Markdown
+    description: "View the README file."

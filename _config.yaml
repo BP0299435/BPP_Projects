@@ -1,5 +1,35 @@
-title: Data Science Portfolio
-logo: 
-#description: text below image
+title: League of Legends Champion Preference Analysis
+description: An in-depth analysis exploring player preferences for champions in League of Legends, combining statistical metrics and visual storytelling to uncover trends.
+logo: /path/to/logo.png
 show_downloads: true
+favicon: /path/to/favicon.ico
 theme: jekyll-theme-minimal
+sections:
+  - name: Executive Summary
+    description: "A concise overview of the project's challenge, methodology, and key findings."
+  - name: Introduction
+    description: "Background on League of Legends and the research question driving this analysis."
+  - name: Data Source and Preparation
+    description: "Detailed steps on data cleaning, integration, and feature engineering."
+  - name: Analysis Documentation
+    description: "A comprehensive walkthrough of exploratory data analysis, statistical methods, and top champion insights."
+  - name: Visualizations and Dashboards
+    description: "Interactive visuals showcasing champion preferences and relationships among metrics."
+  - name: Discussion and Recommendations
+    description: "Key findings, implications for game developers, and recommendations for future research."
+  - name: Conclusion
+    description: "Final thoughts on the study and its relevance to understanding player behaviour."
+  - name: Acknowledgements
+    description: "Credits for data sources and tools used in the project."
+  - name: Future Work
+    description: "Ideas for extending this analysis to other games or player behaviour trends."
+social_links:
+  - platform: GitHub
+    url: https://github.com/IwannaChatz/BPP_Projects
+  - platform: Colab Notebook
+    url: https://colab.research.google.com/
+output:
+  - file_type: PDF
+    description: "Download the full report."
+  - file_type: Markdown
+    description: "View the README file."

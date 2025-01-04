@@ -64,10 +64,20 @@ To compare champion groups, I produced bar charts displaying average performance
 Future Interactive Applications
 For additional engagement, an interactive Plotly-based dashboard could allow users to filter champions by role (e.g., ADC vs. Top vs. Jungle) or visualize changes across patches. Such a real-time analytics platform would be particularly valuable for pro teams seeking data-driven scrim strategies or for game developers looking to rapidly address balancing concerns (Johnson and Kim, 2022).
 
-8. Discussion / Recommendations for Future Iterations (100–150 words)
-Overall, the classification system confirmed that raw damage and potential scaling do not guarantee success if champions require intricate mechanics that typical players can’t easily master (Hanif and Young, 2021). This highlights the importance of bridging skill gaps, either through balance tweaks or in-game tutorials for notoriously complex champions like Azir or Gangplank.
+8. Discussion / Recommendations for Future Iterations (Expanded)
+Overall, the classification system confirmed that raw damage and potential scaling do not guarantee success if a champion’s mechanics are difficult for typical players to master (Hanif and Young, 2021). This highlights the importance of bridging skill gaps, either through balance tweaks or dedicated tutorials.
 
-From a development perspective, focusing on synergy and gameplay accessibility could improve pick rates for underused champions. Potential next steps include expanding data to cover multiple patches, analyzing region-specific meta trends, or incorporating synergy scores between different champions. Eventually, I’d like to apply similar analytics to my all-time favorite games—Cyberpunk 2077 and Assassin’s Creed Valhalla—to demonstrate the universal applicability of data-driven design.
+Why Certain Champions Are “Preferred”
+
+Ashe: Her straightforward kit (point-and-click slow, global ultimate, and auto-attack-based damage) is accessible for all skill levels. Despite lacking extreme burst damage, she maintains a steady 52%+ win rate and a high pick rate—she’s simply easier to pilot effectively.
+Jarvan IV: Offers reliable engagement (the “flag-and-drag” combo), a strong teamfight ultimate, and moderate difficulty, so he’s easy to fit into most team compositions.
+Jhin & Nami: Jhin’s unique reload mechanic is still far easier than high-skill assassins, and Nami’s straightforward healing/CC kit makes her consistently useful in both pro and casual play.
+Why Certain Champions Are “Avoided”
+
+Gangplank: Boasts massive damage potential with barrels and bonus gold mechanics, but his barrel combos require precise timing and positioning—mechanical execution that many average-tier players struggle with. His general 42–46% win rate reflects this steep learning curve.
+Azir: Known for high APM (actions per minute) and complex sand-soldier management, Azir can dominate in skilled hands but often fails in the average tier. If a player’s timing or positioning is off, Azir’s damage plummets.
+Gwen: Powerful self-sustain and untargetability, but her short range and nuanced positioning punish mistakes, leaving less-skilled players to lag behind typical performance.
+From a development perspective, focusing on synergy and accessibility could improve pick rates for such underutilized champions. Potential next steps include expanding the dataset to cover multiple patches, analyzing region-specific meta trends, or incorporating synergy scores between different champions. Eventually, I’d like to apply similar analytics to my favorite games—Cyberpunk 2077 and Assassin’s Creed Valhalla—to demonstrate the universal applicability of data-driven design.
 
 9. Harvard Referencing
 Hanif, M. and Young, J. (2021). “Champion Balancing in MOBAs: A Data-Driven Approach,” Journal of eSports Analytics, 2(2), pp. 33–47.

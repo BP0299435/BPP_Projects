@@ -1,5 +1,23 @@
+# _config.yaml
+
+# -------------------------------------------------
+# 1. GitHub Pages / Project Configuration
+# -------------------------------------------------
+title: "League of Legends Champion Analysis"
+description: "A data science project analyzing champion performance metrics."
+theme: jekyll-theme-cayman
+# baseurl: ""
+# url: "" 
+# plugins:
+#   - jekyll-feed
+#   - jekyll-seo-tag
+
+# -------------------------------------------------
+# 2. Conda Environment Details
+# -------------------------------------------------
 name: lol-analysis-env
 channels:
+  - conda-forge
   - defaults
 dependencies:
   - python=3.9
@@ -7,9 +25,9 @@ dependencies:
   - numpy=1.23.5
   - seaborn=0.12.2
   - matplotlib=3.7.1
+  - scikit-learn=1.2.2
   - ipython=8.12.2
   - ipykernel=6.23.1
   - pip:
-    - tabulate
-    - jupyter
-    - scikit-learn
+      - jupyter
+      - tabulate

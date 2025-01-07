@@ -34,10 +34,10 @@
 | Crafting          | Notes on crafting system or Hextech crafting cost.                                              |
 | Style             | Riot’s or community’s style rating (occasionally included).                                     |
 | Passive           | The champion’s Passive ability or trait.                                                        |
-| Q Spell           | The champion’s Q ability.                                                                       |
-| W Spell           | The champion’s W ability.                                                                       |
-| E Spell           | The champion’s E ability.                                                                       |
-| Ultimate          | The champion’s R ability (ultimate).                                                            |
+| Q Spell           | The champion’s Q button ability.                                                                |
+| W Spell           | The champion’s W button ability.                                                                |
+| E Spell           | The champion’s E button ability.                                                                |
+| Ultimate          | The champion’s R button ability (ultimate).                                                     |
 | Popularity        | Approx. pick rate or usage frequency among players.                                             |
 | Winrate           | Champion’s overall match win rate (in %).                                                       |
 | BanRate           | Champion’s ban rate in match drafting (in %).                                                   |

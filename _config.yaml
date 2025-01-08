@@ -6,8 +6,8 @@
 title: "League of Legends Champion Analysis"
 description: "A data science project analyzing champion performance metrics."
 theme: jekyll-theme-cayman
-# baseurl: ""
-# url: "" 
+baseurl: "/BPP_Projects"
+url: "https://yourusername.github.io"
 # plugins:
 #   - jekyll-feed
 #   - jekyll-seo-tag

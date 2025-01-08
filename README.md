@@ -16,7 +16,7 @@ For column definitions, please see [Data_Dictionary.md](https://github.com/BP029
 
 ---
 
-## 3. Executive Summary (150–250 words)
+## 3. Executive Summary
 This data science project explores League of Legends champion performance using Kaggle’s **“LOL Champions: Stats Overview”** dataset (Kaggle, 2023). By merging separate CSV files containing champion attributes (health, mana, damage, KDA) and game performance metrics (popularity, ban rate), we reveal champions that shine or struggle in the current meta.
 
 Key findings show certain **“Preferred”** champions, such as Ashe and Jarvan IV, maintain robust win rates alongside moderate-to-high popularity, making them staples in both casual and competitive play. Others, including Gangplank or Azir, theoretically boast significant damage potential yet fall under the **“Avoided”** category due to complex mechanics and higher skill requirements—a **skill gap** issue that deters many average-tier players. Moreover, *Gold*—initially considered a key metric—was dropped from the classification process to avoid redundancy; data indicated it strongly correlates with kills and success, making it less informative for an independent measure (West, 2018).
@@ -25,7 +25,7 @@ These insights give eSports professionals and hobbyists an empirical perspective
 
 ---
 
-## 4. Introduction / Project Background (150–250 words)
+## 4. Introduction / Project Background
 League of Legends (LoL), developed by Riot Games, is one of the world’s most popular multiplayer online battle arena (MOBA) games. With frequent patches and a continually expanding champion roster, maintaining game balance is an ongoing challenge (Johnson and Kim, 2022). A champion that excels in high-level, coordinated play might underperform at average skill tiers, complicating developer attempts to keep the meta fair and engaging.
 
 Data analytics offers a systematic framework to unpack champion performance (Hanif and Young, 2021). By examining core attributes (e.g., health, armor, magic resist) and in-game performance metrics (e.g., kill-death-assist ratios, win rate, popularity), one can identify patterns or anomalies indicative of balancing needs. This project leverages my background as both a data analyst and avid gamer to explore champion effectiveness holistically.
@@ -34,7 +34,7 @@ In the broader context, synergy between analytics and design decisions benefits 
 
 ---
 
-## 5. Data Source and Preparation (200–250 words)
+## 5. Data Source and Preparation
 The dataset is sourced from **Kaggle’s LOL Champions: Stats Overview**. It comprises two CSV files:
 
 1. **export_lol_champs.csv** – Covering base stats (HP, MP, attack damage, etc.).  
@@ -48,7 +48,7 @@ Finally, I normalized the remaining performance metrics (win rate, popularity, K
 
 ---
 
-## 6. Analysis Documentation (300–350 words)
+## 6. Analysis Documentation
 
 ### Exploratory Data Analysis
 A correlation matrix revealed moderate mutual relationships among popularity, kill metrics, and KDA. The strong tie between kills and gold supported the decision to exclude **“Gold”** as a key attribute, since high-kill champions naturally accumulate higher gold (West, 2018). Defensive attributes like armor and magic resist showed weaker correlations with champion success, suggesting that mechanical skill or synergy play a more significant role.
@@ -69,7 +69,7 @@ Statistical groupings also showed that **“Avoided”** champions averaged slig
 
 ---
 
-## 7. Visualisations and Dashboards (250–300 words)
+## 7. Visualisations and Dashboards
 
 ### Heatmaps & Correlation Visuals
 A high-level correlation heatmap spotlighted the minimal but notable links among popularity, kills, and overall success metrics, consistent with the notion that popular champions often see more gameplay, hence more opportunities to refine strategies. Meanwhile, **“Gold”** strongly correlated with kills, motivating its removal from classification metrics to prevent redundancy.

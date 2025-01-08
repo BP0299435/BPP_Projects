@@ -45,7 +45,7 @@ I loaded both files into pandas and conducted initial checks (`.info()`, `.descr
 
 ![Data Cleaning](https://github.com/BP0299435/BPP_Projects/blob/main/Screenshots/DataCleaning1.png)
 
-!(https://github.com/BP0299435/BPP_Projects/blob/main/Screenshots/DataCleaning2.png)
+![Data Cleaning](https://github.com/BP0299435/BPP_Projects/blob/main/Screenshots/DataCleaning2.png)
 
 ![Merging Datasets](https://github.com/BP0299435/BPP_Projects/blob/main/Screenshots/MergingDatasets.png)
 

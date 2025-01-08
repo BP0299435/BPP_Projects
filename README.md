@@ -103,7 +103,6 @@ To compare champion groups, I produced bar charts displaying average performance
 ![Preferred vs Neutral vs Avoided](https://github.com/BP0299435/BPP_Projects/blob/main/Screenshots/DistributionOfCompositeScoresWithThresholds_Output2.png)
 ![Preferred vs Neutral vs Avoided](https://github.com/BP0299435/BPP_Projects/blob/main/Screenshots/championclassification.png)
 ![Damage Dealt Distribution](https://github.com/BP0299435/BPP_Projects/blob/main/Screenshots/damage%20dealt%20distribution.png)
-![Damage Dealt Across Preferences](https://github.com/BP0299435/BPP_Projects/blob/main/Screenshots/DamageDealtDistributionAcrossPreferences.png)
 ![Avg Winrate Across Preferences](https://github.com/BP0299435/BPP_Projects/blob/main/Screenshots/AvgWinrateAcrossChampionPreferences.png)
 
 ### Future Interactive Applications

@@ -2,9 +2,11 @@
 
 ---
 
-## 1. Glossary
+## 1. Useful Links
 
-For column definitions, please see [Data_Dictionary.md](https://github.com/BP0299435/BPP_Projects/blob/main/Data_Dictionary.md).
+**Glossary**: For column definitions, please see [Data_Dictionary.md](https://github.com/BP0299435/BPP_Projects/blob/main/Data_Dictionary.md).
+**Code**: For the Python code file, please see [Google Colab Notebook](https://github.com/BP0299435/BPP_Projects/tree/main/GoogleColabNotebook)
+**Screenshots**: For pictures of each step, please see [Screenshots of each step](https://github.com/BP0299435/BPP_Projects/tree/main/Screenshots)
 
 ---
 
@@ -53,8 +55,6 @@ During preprocessing, several features stored as strings (e.g., “47.5%”) wer
 
 Finally, I normalized the remaining performance metrics (win rate, popularity, KDA) and aggregated them into a **“Composite_Score”** to highlight multi-dimensional champion strength.
 
-![Composite Score](https://github.com/BP0299435/BPP_Projects/blob/main/Screenshots/AssigningWeightToCompositeFormula.png)
-
 ---
 
 ## 6. Analysis Documentation
@@ -66,7 +66,10 @@ A correlation matrix revealed moderate mutual relationships among popularity, ki
 I developed a **“Composite_Score”** by normalizing and weighting three metrics:
 - **Win Rate (50%)** – The champion’s likelihood of victory.  
 - **Popularity (30%)** – Indicative of pick rate or general player favor.  
-- **KDA Ratio (20%)** – Accounts for kills, deaths, assists.  
+- **KDA Ratio (20%)** – Accounts for kills, deaths, assists.
+
+![Composite Score](https://github.com/BP0299435/BPP_Projects/blob/main/Screenshots/AssigningWeightToCompositeFormula.png)
+![Distribution of Composite Scores](https://github.com/BP0299435/BPP_Projects/blob/main/Screenshots/distributioofcompositescores.png)
 
 Champions whose **Composite_Score** exceeded the 75th percentile were **“Preferred,”** while those below the 25th percentile were labeled **“Avoided.”** The remainder stayed **“Neutral.”**
 
@@ -83,18 +86,32 @@ Statistical groupings also showed that **“Avoided”** champions averaged slig
 ### Heatmaps & Correlation Visuals
 A high-level correlation heatmap spotlighted the minimal but notable links among popularity, kills, and overall success metrics, consistent with the notion that popular champions often see more gameplay, hence more opportunities to refine strategies. Meanwhile, **“Gold”** strongly correlated with kills, motivating its removal from classification metrics to prevent redundancy.
 
+![Heatmap1](https://github.com/BP0299435/BPP_Projects/blob/main/Screenshots/heatmap%20lol.png)
+![Heatmap2](https://github.com/BP0299435/BPP_Projects/blob/main/Screenshots/heatmap%20no%20gold.png)
+![Heatmap3](https://github.com/BP0299435/BPP_Projects/blob/main/Screenshots/FilteredCorrelationHeatmapCreation1_Output1.png)
+![Heatmap4](https://github.com/BP0299435/BPP_Projects/blob/main/Screenshots/FilteredCorrelationHeatmapCreation3_Output1.png)
+
 ### Scatterplots
 Scatterplots plotting **Composite_Score** against win rate (with champions color-coded by their “Preferred/Neutral/Avoided” status) clearly illustrated that certain **“Avoided”** champions resided below the typical 50% win rate threshold, despite high potential damage outputs. Some **“Preferred”** picks, like Ashe, hovered around or above the 52–53% range, reflecting ease of use and synergy with diverse team compositions.
 
+![Composite Score vs Winrate](https://github.com/BP0299435/BPP_Projects/blob/main/Screenshots/ChampionClassification_CompositevsWinrate_Output1.png)
+![Preferred vs Avoided](https://github.com/BP0299435/BPP_Projects/blob/main/Screenshots/ChampionClassification_CompositevsWinrateSansNeutral_Output1.png)
+
 ### Bar Charts & Comparative Plots
 To compare champion groups, I produced bar charts displaying average performance. One bar plot showcased average win rates across **“Preferred,” “Neutral,” and “Avoided”** groups. It confirmed that **“Preferred”** champions consistently maintained higher win percentages. Another bar chart revealed that **“Avoided”** champions sometimes had high damage numbers but trailed in success rates, supporting the skill-gap argument (Hanif and Young, 2021).
+
+![Preferred vs Neutral vs Avoided](https://github.com/BP0299435/BPP_Projects/blob/main/Screenshots/DistributionOfCompositeScoresWithThresholds_Output2.png)
+![Preferred vs Neutral vs Avoided](https://github.com/BP0299435/BPP_Projects/blob/main/Screenshots/championclassification.png)
+![Damage Dealt Distribution](https://github.com/BP0299435/BPP_Projects/blob/main/Screenshots/damage%20dealt%20distribution.png)
+![Damage Dealt Across Preferences](https://github.com/BP0299435/BPP_Projects/blob/main/Screenshots/DamageDealtDistributionAcrossPreferences.png)
+![Avg Winrate Across Preferences](https://github.com/BP0299435/BPP_Projects/blob/main/Screenshots/AvgWinrateAcrossChampionPreferences.png)
 
 ### Future Interactive Applications
 For additional engagement, an interactive Plotly-based dashboard could allow users to filter champions by role (e.g., ADC vs. Top vs. Jungle) or visualize changes across patches. Such a real-time analytics platform would be particularly valuable for pro teams seeking data-driven scrim strategies or for game developers looking to rapidly address balancing concerns (Johnson and Kim, 2022).
 
 ---
 
-## 8. Discussion / Recommendations for Future Iterations (Expanded)
+## 8. Discussion / Recommendations for Future Iterations
 Overall, the classification system confirmed that raw damage and potential scaling do not guarantee success if a champion’s mechanics are difficult for typical players to master (Hanif and Young, 2021). This highlights the importance of bridging skill gaps, either through balance tweaks or dedicated tutorials.
 
 ### Why Certain Champions Are “Preferred”
@@ -106,6 +123,9 @@ Overall, the classification system confirmed that raw damage and potential scali
 - **Gangplank**: Boasts massive damage potential with barrels and bonus gold mechanics, but his barrel combos require precise timing—mechanical execution that many average-tier players struggle with. His 42–46% win rate reflects this steep learning curve.  
 - **Azir**: Known for high APM (actions per minute) and complex sand-soldier management, Azir can dominate in skilled hands but often fails in the average tier.  
 - **Gwen**: Powerful self-sustain and untargetability, but her short range and nuanced positioning punish mistakes, leaving less-skilled players to lag behind typical performance.
+
+  ![Top Preferred](https://github.com/BP0299435/BPP_Projects/blob/main/Screenshots/top%20preferred.png)
+  ![Top Avoided](https://github.com/BP0299435/BPP_Projects/blob/main/Screenshots/top%20avoided.png)
 
 From a development perspective, focusing on synergy and accessibility could improve pick rates for such underutilized champions. Potential next steps include expanding the dataset to cover multiple patches, analyzing region-specific meta trends, or incorporating synergy scores between different champions. Eventually, I’d like to apply similar analytics to my favorite games—**Cyberpunk 2077** and **Assassin’s Creed Valhalla**—to demonstrate the universal applicability of data-driven design.
 

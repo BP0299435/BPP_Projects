@@ -2,9 +2,7 @@
 
 ---
 
-## 1. Link to GitHub Portfolio
-A full version of this project, including code notebooks and additional commentary, is hosted on my GitHub:  
-[League of Legends Data Analysis](https://colab.research.google.com/drive/1GDDj4yBSf6JJg1W2SiZLLBjS7E88jw3d)
+## 1. Glossary
 
 For column definitions, please see [Data_Dictionary.md](https://github.com/BP0299435/BPP_Projects/blob/main/Data_Dictionary.md).
 

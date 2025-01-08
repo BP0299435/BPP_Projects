@@ -43,6 +43,10 @@ The dataset is sourced from **Kaggle’s LOL Champions: Stats Overview**. It com
 
 I loaded both files into pandas and conducted initial checks (`.info()`, `.describe()`) to detect inconsistencies. Missing values were primarily confined to features like `Style`, which was imputed with “Unknown.” No significant duplicates were found. Next, I merged these datasets on the **“Champions”** key using an **inner join**, ensuring a clean, combined dataset.
 
+![Data Cleaning](https://github.com/BP0299435/BPP_Projects/blob/main/Screenshots/DataCleaning1.png)
+
+!(https://github.com/BP0299435/BPP_Projects/blob/main/Screenshots/DataCleaning2.png)
+
 ![Merging Datasets](https://github.com/BP0299435/BPP_Projects/blob/main/Screenshots/MergingDatasets.png)
 
 During preprocessing, several features stored as strings (e.g., “47.5%”) were stripped of special characters and converted to numeric. I ultimately decided to drop the **“Gold”** field from the final champion classification metric: it was highly correlated with kills and overall performance, offering little additional explanatory power (West, 2018). This streamlined approach reduces redundancy and potential collinearity.

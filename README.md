@@ -53,6 +53,8 @@ During preprocessing, several features stored as strings (e.g., “47.5%”) wer
 
 Finally, I normalized the remaining performance metrics (win rate, popularity, KDA) and aggregated them into a **“Composite_Score”** to highlight multi-dimensional champion strength.
 
+![Composite Score](https://github.com/BP0299435/BPP_Projects/blob/main/Screenshots/AssigningWeightToCompositeFormula.png)
+
 ---
 
 ## 6. Analysis Documentation

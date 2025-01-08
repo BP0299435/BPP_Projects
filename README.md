@@ -59,6 +59,8 @@ Finally, I normalized the remaining performance metrics (win rate, popularity, K
 
 ## 6. Analysis Documentation
 
+
+
 ### Exploratory Data Analysis
 A correlation matrix revealed moderate mutual relationships among popularity, kill metrics, and KDA. The strong tie between kills and gold supported the decision to exclude **“Gold”** as a key attribute, since high-kill champions naturally accumulate higher gold (West, 2018). Defensive attributes like armor and magic resist showed weaker correlations with champion success, suggesting that mechanical skill or synergy play a more significant role.
 
@@ -67,6 +69,8 @@ I developed a **“Composite_Score”** by normalizing and weighting three metri
 - **Win Rate (50%)** – The champion’s likelihood of victory.  
 - **Popularity (30%)** – Indicative of pick rate or general player favor.  
 - **KDA Ratio (20%)** – Accounts for kills, deaths, assists.
+
+Percentile thresholds were chosen for classification to ensure clear segmentation of champions into Preferred, Neutral, and Avoided categories. This method is intuitive and balances interpretability with precision. Alternative methods like clustering were considered but deemed less effective for actionable insights.
 
 ![Composite Score](https://github.com/BP0299435/BPP_Projects/blob/main/Screenshots/AssigningWeightToCompositeFormula.png)
 ![Distribution of Composite Scores](https://github.com/BP0299435/BPP_Projects/blob/main/Screenshots/distributioofcompositescores.png)
@@ -112,6 +116,8 @@ For additional engagement, an interactive Plotly-based dashboard could allow use
 
 ## 8. Discussion / Recommendations for Future Iterations
 Overall, the classification system confirmed that raw damage and potential scaling do not guarantee success if a champion’s mechanics are difficult for typical players to master (Hanif and Young, 2021). This highlights the importance of bridging skill gaps, either through balance tweaks or dedicated tutorials.
+
+The dataset lacks time-bound metrics (e.g., patch-specific changes) and player-level data (e.g., rank or region), limiting the ability to explore meta shifts or skill-tier variations. These gaps could influence the applicability of findings across diverse player groups.
 
 ### Why Certain Champions Are “Preferred”
 - **Ashe**: Her straightforward kit (point-and-click slow, global ultimate, and auto-attack-based damage) is accessible for all skill levels. Despite lacking extreme burst damage, she maintains a steady 52%+ win rate and a high pick rate—she’s simply easier to pilot effectively.  

@@ -17,7 +17,8 @@ For column definitions, please see [Data_Dictionary.md](https://github.com/BP029
 ---
 
 ## 3. Executive Summary
-This data science project explores League of Legends champion performance using Kaggle’s **“LOL Champions: Stats Overview”** dataset (Kaggle, 2023). By merging separate CSV files containing champion attributes (health, mana, damage, KDA) and game performance metrics (popularity, ban rate), we reveal champions that shine or struggle in the current meta.
+This data science project explores League of Legends champion performance using Kaggle’s **“LOL Champions: Stats Overview”** dataset (Kaggle, 2023). By merging separate CSV files containing champion attributes (health, mana, damage, KDA) and game performance metrics (popularity, ban rate), I
+reveal champions that shine or struggle in the current meta.
 
 Key findings show certain **“Preferred”** champions, such as Ashe and Jarvan IV, maintain robust win rates alongside moderate-to-high popularity, making them staples in both casual and competitive play. Others, including Gangplank or Azir, theoretically boast significant damage potential yet fall under the **“Avoided”** category due to complex mechanics and higher skill requirements—a **skill gap** issue that deters many average-tier players. Moreover, *Gold*—initially considered a key metric—was dropped from the classification process to avoid redundancy; data indicated it strongly correlates with kills and success, making it less informative for an independent measure (West, 2018).
 
@@ -41,6 +42,8 @@ The dataset is sourced from **Kaggle’s LOL Champions: Stats Overview**. It com
 2. **lol_champions.csv** – Expanding on stats such as damage dealt, KDA breakdowns, ban rate, and popularity percentages.
 
 I loaded both files into pandas and conducted initial checks (`.info()`, `.describe()`) to detect inconsistencies. Missing values were primarily confined to features like `Style`, which was imputed with “Unknown.” No significant duplicates were found. Next, I merged these datasets on the **“Champions”** key using an **inner join**, ensuring a clean, combined dataset.
+
+![Merging Datasets](https://github.com/BP0299435/BPP_Projects/blob/main/Screenshots/MergingDatasets.png)
 
 During preprocessing, several features stored as strings (e.g., “47.5%”) were stripped of special characters and converted to numeric. I ultimately decided to drop the **“Gold”** field from the final champion classification metric: it was highly correlated with kills and overall performance, offering little additional explanatory power (West, 2018). This streamlined approach reduces redundancy and potential collinearity.
 
